@@ -47,7 +47,7 @@ Clock domains:
 | --- | ---: | --- |
 | `clk_100mhz` | 100 MHz | System clock and SCCB configuration |
 | `pixel_clk` | 25 MHz | VGA timing, display pipeline, BRAM read port |
-| `cam_xclk` | 24 MHz | Master clock driven out to the OV7670 |
+| `cam_xclk` | 25 MHz | Master clock driven out to the OV7670 |
 | `cam_pclk` | about 12-25 MHz | Camera capture and BRAM write port |
 
 `frame_done` crosses from the camera clock domain into the VGA pixel clock domain using a toggle synchronizer. The display stays black until a complete frame has been captured.
